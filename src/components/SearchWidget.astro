@@ -1,0 +1,37 @@
+---
+
+---
+
+<aside>
+    <form class="form">
+        <div>
+            <span> Enter a serach term or phrase to search the blog.</span>
+            <label for="search">Search</label>
+        </div>
+        <input
+            type="search"
+            required
+            min="2"
+            max="24"
+            name="search"
+            id="search"
+            placeholder="Enter a search term..."
+        />
+    </form>
+</aside>
+
+<script>
+    import DOMpurify from "dompurify";
+    const form = document.querySelector("form");
+    form?.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const formData = new FormData(form);
+        const searchTerm = DOMpurify.sanitize(formData.get("search")?.toString());
+        console.log(searchTerm);
+        if (!searchTerm ||  searchTerm.length === 0 ) return;
+        const url = new URL("/search", window.location.origin);
+        url.searchParams.set("q", searchTerm);
+        window.location.assign(url).toString();
+        
+    });
+</script>

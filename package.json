@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.5",
-    "astro": "^4.3.5"
+    "astro": "^4.3.5",
+    "dompurifier": "^0.0.1-security",
+    "dompurify": "^3.0.8"
   }
 }

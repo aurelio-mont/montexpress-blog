@@ -2,22 +2,27 @@
 import Link from '../components/Link.astro';
 import MainLayout from '../layouts/MainLayout.astro'
 
-const title = 'About';
+const subTitle = 'About';
+
+const TITLE_WEB = import.meta.env.TITLE_WEB;
 ---
 
-<MainLayout title={title}>
+<MainLayout subTitle={subTitle} >
   <section class="container about" aria-label="About Me">
     <img
-      src="/images/headshot.jpg"
+      src="/logomark.svg"
       alt="My headshot"
       width="200"
       height="330"
     />
     <div class="content">
-      <h1 class="h1">My Blog</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, deleniti recusandae facilis dolorem labore sapiente et expedita nemo perferendis temporibus neque ex tenetur nihil. Reprehenderit placeat aliquam temporibus nemo deleniti eveniet repellat facilis, minus quas obcaecati. Possimus repellendus illum earum cumque unde ipsam, libero eos dicta nemo consequuntur!</p>
+      <h2 class="h1">{TITLE_WEB}</h2>
+      <h2 class="h2">Innovación y Creatividad en Cada Clic </h2>
+      <p>
+        Bienvenido a {TITLE_WEB}, tu socio estratégico en el mundo digital. Nos especializamos en crear soluciones web a medida que impulsan el éxito de tu negocio. Con un equipo de desarrolladores apasionados y creativos, transformamos tus ideas en realidades digitales impactantes.
+      </p>
       <Link  
-        href='mailto:montexpress.ane@gmail.com'
+        href='mailto:contacto@montexpress.com-mx'
         text='Contact Me'
         style='primary'
         icon={{

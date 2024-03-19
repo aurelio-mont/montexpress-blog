@@ -7,12 +7,14 @@ import navData from '../data/navData'
 
 // components imports
 import Link from './Link.astro'
+
+const { branch } = Astro.props;
 ---
 
 <nav aria-label="Primary">
     <div class="navbar">
       <a href="/" class="logomark" aria-label="Go home">
-        <Icon name="logomark" width={60} />
+        {branch}
       </a>
       <ul>
         {

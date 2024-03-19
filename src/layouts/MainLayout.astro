@@ -8,18 +8,23 @@ import Nav from '../components/Nav.astro';
 interface Props {
     title?: string;
     description?: string;
+    subTitle?: string;
 }
 
+
+
 const {
-    title ="My Astro Blog", 
-    description = "A blog about Astro"
+    title ="MontExpress ", 
+    description = "Innovación y Creatividad en Cada ClicBienvenido a MontExpress, tu socio estratégico en el mundo digital. Nos especializamos en crear soluciones web a medida que impulsan el éxito de tu negocio. Con un equipo de desarrolladores apasionados y creativos, transformamos tus ideas en realidades digitales impactantes.",
+    subTitle=" ",
     } = Astro.props as Props;
+    
 ---
 
 <html lang="en">
-	<MainHead {title} {description} />
+	<MainHead title={`${title}  ${subTitle}`} description={description} />
 	<body>
-        <Nav />
+        <Nav branch={title} />
         <main>
             <slot />
         </main>

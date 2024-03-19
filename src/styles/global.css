@@ -34,7 +34,7 @@ h6 {
 /* CSS variables inspired by https://open-props.style/ */
 :root {
   /* colors */
-  --_hue: 235;
+  --_hue: 3;
 
   /* Light Mode */
   --bkg--light: var(--_hue) 25% 97%;
@@ -358,6 +358,7 @@ button {
   display: grid;
   place-items: center;
   padding: var(--space-2xs);
+  text-decoration: none;
 }
 
 [aria-label="Blog pages"] {

@@ -7,23 +7,14 @@ const subTitle = 'Page Not Found';
 ---
 
 <MainLayout subTitle={subTitle}>
-    <div 
-        class="container"
-        style={{
-            display: "grid",
-            placeItems: "center",
-            textAline: "center",
-            gap: "var(---space-sn)",
-        }}
-    >
+    <section class="e404" id="e404">
+		<div class="e404-content">
         
-            <h1 class="h1">Welp, this is awkward!</h1>
+            <h1 class="e404-content">Welp, this is awkward!</h1>
             <p>We seem to have misplased something...</p>
-        
-        <Link
-        href='/'
-        style='secondary'
-        text='Go Home'
-        />
-  </div>
+            <div class="btn-box">
+                <a href="/" class="btn" >Go to Home</a>
+            </div>
+        </div>
+    </section>
 </MainLayout>

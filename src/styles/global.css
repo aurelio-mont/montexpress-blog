@@ -126,3 +126,24 @@ section {
   letter-spacing: .1rem;
   color: var(--bg-color);
 }
+
+.e404 {
+  display: flex;
+  align-items: center;
+  padding: 0 9%;
+}
+
+.e404-content {
+  max-width: 60rem;
+}
+
+.e404-content h1 {
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.e404-content p {
+  font-size: 1.6rem;
+  margin: 2rem 0 4rem;
+}

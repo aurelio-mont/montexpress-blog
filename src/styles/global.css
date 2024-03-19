@@ -1,125 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Noto Sans Variable', sans-serif;
+}
+
+:root {
+  --bg-color: #1e0505;
+  --second-bg-color: #431111;
+  --text-color: #ffffff;
+  --main-color: #df6919;
+}
+
 html {
-  background-color: #f1f5f9;
-  scrollbar-gutter: stable;
-  color: #333;
+  font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: auto;
-  padding: 20px;
-  max-width: 65ch;
-  text-align: left;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  line-height: 1.5;
+  background: var(--bg-color);
+  color: var(--text-color);
 }
 
-* {
-  box-sizing: border-box;
-}
-
-h1 {
-  margin: 1rem 0;
-  font-size: 2.5rem;
-}
-h2 {
-  margin: 1rem 0;
-  font-size: 2rem;
-
-}
-
-form {
-  display: grid;
-  gap: 1rem;
-  max-width: 32ch;
-}
-
-input[type="search"] {
-  padding: 0.5rem;
-  font-size: 1.2rem;
-  border: none;
-  border-bottom: Solid 3px #ff9776;
-}
-
-/* nav styles */
-
-.hamburger {
-  padding-right: 20px;
-  cursor: pointer;
-}
-
-.hamburger .line {
-  display: block;
-  width: 40px;
-  height: 5px;
-  margin-bottom: 10px;
-  background-color: #ff9776;
-}
-
-.nav-links {
+.header {
+  position: fixed;
+  top: 0%;
+  left: 0%;
   width: 100%;
-  top: 5rem;
-  left: 48px;
-  background-color: #ff9776;
+  padding: 2rem;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.navbar a {
+  font-size: 1.7rem;
+  color: var(--text-color);
+  font-weight: 500;
+  margin-left: 3.5rem;
+  transition: .3s;
+}
+
+.navbar a :hover,
+.navbar a.active {
+  color: var(--main-color);
+}
+
+.menu-icon {
+  font-size: 3.6rem;
+  color: var(--text-color);
+  cursor: pointer;
   display: none;
-  margin: 0;
 }
 
-.nav-links a {
-  display: block;
-  text-align: center;
-  padding: 10px 0;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #302f2f;
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
 }
 
-.nav-links a:hover,
-.nav-links a:focus {
-  background-color: #ff9776;
+.home {
+  display: flex;
+  align-items: center;
+  padding: 0 9%;
 }
 
-.expanded {
-  display: unset;
+.home-content {
+  max-width: 60rem;
 }
 
-@media screen and (min-width: 636px) {
-  .nav-links {
-    margin-left: 5em;
-    display: block;
-    position: static;
-    width: auto;
-    background: none;
-  }
-
-  .nav-links a {
-    display: inline-block;
-    padding: 15px 20px;
-  }
-
-  .hamburger {
-    display: none;
-  }
+.home-content h1 {
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 1.3;
 }
 
-html.dark {
-  background-color: #302f2f;
-  color: #fff;
+.home-content .text-animate {
+  position: relative;
+  width: 32.8rem;
 }
 
-.dark .nav-links a {
-  color: #fff;
+.home-content .text-animate h3 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: .7px var(--main-color);
 }
 
-.social {
-  padding: 0.5rem 1rem;
-  color: white;
-  background-color: #ff9776;
-  text-decoration: none;
-} 
+.home-content p {
+  font-size: 1.6rem;
+  margin: 2rem 0 4rem;
+}
+
+.btn-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 34.5rem;
+  height: 5rem;
+}
+
+.btn-box .btn {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 100%;
+  background: var(--main-color);
+  border: .2rem solid var(--main-color);
+  border-radius: .8rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  color: var(--bg-color);
+}
+
+.e404 {
+  display: flex;
+  align-items: center;
+  padding: 0 9%;
+}
+
+.e404-content {
+  max-width: 100%;
+}
+
+.e404-content h1 {
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.e404-content p {
+  font-size: 1.6rem;
+  margin: 2rem 0 4rem;
+}

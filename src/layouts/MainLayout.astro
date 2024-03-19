@@ -1,4 +1,7 @@
 ---
+import '@fontsource-variable/noto-sans';
+
+
 import "../styles/global.css";
 import MainHead from './MainHead.astro';
 
@@ -24,10 +27,10 @@ const {
 <html lang="en">
 	<MainHead title={`${title}  ${subTitle}`} description={description} />
 	<body>
-        <Nav branch={title} />
+        <Nav branch={title} pageActive="/" />
         <main>
             <slot />
         </main>
-		<Footer />
+		
 	</body>
 </html>

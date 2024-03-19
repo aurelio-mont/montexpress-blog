@@ -10,7 +10,7 @@ interface Props {
     name: string;
     side: "left" | "right";
   };
-  isFilled?: boolean;
+  active?: string;
   borderVisible?: boolean;
   classes?: string;
 }
@@ -20,7 +20,7 @@ const {
   href,
   style,
   icon,
-  isFilled = true,
+  active,
   borderVisible = false,
   classes,
   ...rest
@@ -31,9 +31,8 @@ const {
   href={href}
   class:list={[
     "link",
-    classes,
+    active === href && ("active"),
     style,
-    { filled: isFilled, bordered: borderVisible },
   ]}
   {...rest}
 >

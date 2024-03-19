@@ -1,0 +1,37 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+// components imports
+import Link from '../components/Link.astro';
+
+const title = 'Page Not Found';
+---
+
+<MainLayout title={title}>
+    <div 
+        class="container"
+        style={{
+            display: "grid",
+            placeItems: "center",
+            textAline: "center",
+            gap: "var(---space-sn)",
+        }}
+    >
+        
+            <h1 class="h1">Welp, this is awkward!</h1>
+            <p>We seem to have misplased something...</p>
+        
+        <Link
+        href='/'
+        style='secondary'
+        text='Go Home'
+        isFilled={false}
+        borderVisible={true}
+        icon={
+            {
+                name: "home",
+                side: "right"
+            }
+        }
+        />
+  </div>
+</MainLayout>

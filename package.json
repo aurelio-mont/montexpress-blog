@@ -1,18 +1,25 @@
 {
-  "name": "blog",
+  "name": "blog-ame-dev",
   "type": "module",
   "version": "0.0.1",
+  "browserslist": [
+    "defaults"
+  ],
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/rss": "^4.0.5",
-    "astro": "^4.3.5",
-    "dompurifier": "^0.0.1-security",
-    "dompurify": "^3.0.8"
+    "@astrojs/check": "^0.5.4",
+    "@tabler/core": "^1.0.0-beta20",
+    "astro": "^4.4.0",
+    "astro-icon": "^1.1.0",
+    "postcss": "^8.4.35",
+    "postcss-preset-env": "^9.3.0",
+    "sharp": "^0.33.2",
+    "typescript": "^5.3.3"
   }
 }

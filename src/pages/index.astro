@@ -1,12 +1,8 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import SearchWidget from '../components/SearchWidget.astro';
-const pageTitle = "MontExpress";
-const pageHeader = "MontExpress";
+import MainLayout from '../layouts/MainLayout.astro'
+const title = 'Home';
 ---
-<BaseLayout pageTitle={pageTitle} pageHeader={pageHeader}>
-  <h2>My awesome blog subtitle</h2>
-  
-  <SearchWidget />
-  
-</BaseLayout>
+
+<MainLayout title={title}>
+	 <p>This is the <span>{title}</span> page</p>
+</MainLayout>

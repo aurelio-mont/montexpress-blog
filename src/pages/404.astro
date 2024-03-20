@@ -1,0 +1,20 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+// components imports
+import Link from '../components/Link.astro';
+
+const subTitle = 'Page Not Found';
+---
+
+<MainLayout subTitle={subTitle}>
+    <section class="e404" id="e404">
+		<div class="e404-content">
+        
+            <h1 class="e404-content">Welp, this is awkward!</h1>
+            <p>We seem to have misplased something...</p>
+            <div class="btn-box">
+                <a href="/" class="btn" >Go to Home</a>
+            </div>
+        </div>
+    </section>
+</MainLayout>

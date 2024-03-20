@@ -1,11 +1,21 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import SearchWidget from '../components/SearchWidget.astro';
-const pageTitle = "Home Page";
+import MainLayout from '../layouts/MainLayout.astro'
+const title = 'Home';
 ---
-<BaseLayout pageTitle={pageTitle}>
-  <h2>My awesome blog subtitle</h2>
-  
-  <SearchWidget />
-  
-</BaseLayout>
+
+<MainLayout subTitle={title}>
+	<section class="home" id="home">
+		<div class="home-content">
+			<h1 class="home-content">Mont<span>Express</span></h1>
+			<div class="text-animate">
+				<h3>Innovación y Creatividad en Cada Clic</h3>
+			</div>
+			<p>Bienvenido a [Nombre de la Empresa], tu socio estratégico en el mundo digital. Nos especializamos en crear soluciones web a medida que impulsan el éxito de tu negocio. Con un equipo de desarrolladores apasionados y creativos, transformamos tus ideas en realidades digitales impactantes.</p>
+			<div class="btn-box">
+				<a href="/about/" class="btn">More</a>
+				<a href="#" class="btn">Let's Tak</a>
+
+			</div>
+		</div>
+	</section> 
+</MainLayout>

@@ -17,7 +17,7 @@ interface Props {
 
 
 const {
-    title ="MontExpress ", 
+    title ="MontExpress", 
     description = "Innovación y Creatividad en Cada ClicBienvenido a MontExpress, tu socio estratégico en el mundo digital. Nos especializamos en crear soluciones web a medida que impulsan el éxito de tu negocio. Con un equipo de desarrolladores apasionados y creativos, transformamos tus ideas en realidades digitales impactantes.",
     subTitle=" ",
     } = Astro.props as Props;
@@ -25,9 +25,9 @@ const {
 ---
 
 <html lang="en">
-	<MainHead title={`${title}  ${subTitle}`} description={description} />
+	<MainHead title={title} description={description} />
 	<body>
-        <Nav branch={title} pageActive="/" />
+        <Nav/>
         <main>
             <slot />
         </main>

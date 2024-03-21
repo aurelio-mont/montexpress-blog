@@ -2,33 +2,18 @@
 //Library imports
 import { Icon } from "astro-icon/components";
 
-// data impors
-import navData from "../data/navData";
-
 // components imports
 import Link from "./Link.astro";
-
-const { branch, pageActive } = Astro.props;
-
 ---
 
 <header class="header">
   <a href="/" class="logo" aria-label="Go home">
-    {branch}
+    <b>mont<span>Express</span></b>
   </a>
   <Icon name="menu" class="menu-icon" />
   <nav class="navbar">
-    {
-      navData.map((item) => (
-        <Link
-          text={item.name}
-          href={item.path}
-          style="primary"
-          active={pageActive}
-          data-navLink
-          
-        />
-      ))
-    }
+    <a href="#home" class="active" >Home</a>
+    <a href="#about">About</a>
+    <a href="/blog/">Blog</a>
   </nav>
 </header>

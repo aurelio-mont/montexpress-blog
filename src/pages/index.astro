@@ -1,13 +1,14 @@
 ---
 import { Icon } from 'astro-icon/components';
 import MainLayout from '../layouts/MainLayout.astro'
+import About from '../components/About.astro'
 const title = 'Home';
 ---
 
 <MainLayout subTitle={title}>
 	<section class="home" id="home">
 		<div class="home-content">
-			<h1 class="home-content">Mont<span>Express</span></h1>
+			<h1 class="home-content">mont<span>Express</span></h1>
 			<div class="text-animate">
 				<h3>Innovación y Creatividad en Cada Clic</h3>
 			</div>
@@ -23,5 +24,6 @@ const title = 'Home';
 			<a href=""><Icon name="tiktok" /></a>
 		</div>
 		<div class="home-imgHover"></div>
-	</section> 
+	</section>
+	<About /> 
 </MainLayout>

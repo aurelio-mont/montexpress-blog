@@ -320,3 +320,91 @@ span {
   font-size: 1.6rem;
   margin: 2rem 0 4rem;
 }
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: auto;
+  padding-bottom: 5rem; 
+}
+
+.services .services-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.services-row .services-column {
+  flex: 1 1 40rem;
+}
+
+.services-column .title {
+  font-size: 2.5rem;
+  margin: 0 0 1.5rem 2rem;
+}
+
+.services-column .services-box {
+  border-left: .2rem solid var(--main-color);
+}
+
+.services-box .services-content {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.services-box .services-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -1.1rem;
+  width: 2rem;
+  height: 2rem;
+  background: var(--main-color);
+  border-radius: 50%;
+}
+
+.services-content .content {
+  position: relative;
+  padding: 1.5rem;
+  border: .2rem solid var(--main-color);
+  border-radius: .6rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.services-content .content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--second-bg-color);
+  z-index: -1;
+  transition: .5s;
+}
+
+.services-content .content:hover::before {
+  width: 100%;
+}
+
+.services-content .content .icon {
+  font-size: 1.5rem;
+  color: var(--main-color);
+  padding-bottom: .5rem;
+}
+
+.services-content .content .icon .i {
+  padding-right: .5rem;
+}
+
+.services-content .content h3 {
+  font-size: 2rem;
+}
+
+.services-content .content p {
+  font-size: 1.6rem;
+  padding-top: .5rem;
+}

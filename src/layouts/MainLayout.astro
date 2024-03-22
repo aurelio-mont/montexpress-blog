@@ -5,21 +5,17 @@ import '@fontsource-variable/noto-sans';
 import "../styles/global.css";
 import MainHead from './MainHead.astro';
 
-import Footer from '../components/Footer.astro';
 import Nav from '../components/Nav.astro';
 
 interface Props {
     title?: string;
     description?: string;
-    subTitle?: string;
 }
 
 
-
 const {
-    title ="MontExpress", 
-    description = "Innovación y Creatividad en Cada ClicBienvenido a MontExpress, tu socio estratégico en el mundo digital. Nos especializamos en crear soluciones web a medida que impulsan el éxito de tu negocio. Con un equipo de desarrolladores apasionados y creativos, transformamos tus ideas en realidades digitales impactantes.",
-    subTitle=" ",
+    title ="montExpress", 
+    description = "Innovación y Creatividad en Cada Clic",
     } = Astro.props as Props;
     
 ---
@@ -31,6 +27,5 @@ const {
         <main>
             <slot />
         </main>
-		
 	</body>
 </html>

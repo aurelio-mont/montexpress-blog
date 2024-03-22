@@ -2,10 +2,11 @@
 import { Icon } from 'astro-icon/components';
 import MainLayout from '../layouts/MainLayout.astro'
 import About from '../components/About.astro'
-const title = 'Home';
+import Services from '../components/Services.astro'
+import Technologies from '../components/Technologies.astro'
 ---
 
-<MainLayout subTitle={title}>
+<MainLayout >
 	<section class="home" id="home">
 		<div class="home-content">
 			<h1 class="home-content">mont<span>Express</span></h1>
@@ -25,5 +26,7 @@ const title = 'Home';
 		</div>
 		<div class="home-imgHover"></div>
 	</section>
-	<About /> 
+	<About />
+	<Services /> 
+	<Technologies />
 </MainLayout>

@@ -1,3 +1,30 @@
-<section class="technologies" id="technologies">
+---
+import TechnologiesCard from "./TechnologiesCard.astro";
 
+
+---
+<section class="technologies" id="technologies">
+    <h2 class="heading">Development <span>Technologies</span></h2>
+    <div class="technologies-row">
+      <div class="technologies-colum">
+        <h3 class="title">Tecnologias de AI</h3>
+        <div class="technologies-box">
+          <div class="technologies-content">
+            <TechnologiesCard titleCard="Copilot" iconCard="web" />
+            <TechnologiesCard titleCard="Codium" iconCard="web" />
+            <TechnologiesCard titleCard="Chat GPT" iconCard="web" />
+          </div>
+        </div>
+      </div>
+      <div class="technologies-colum">
+        <h3 class="title">Tecnologias Web</h3>
+        <div class="technologies-box">
+          <div class="technologies-content">
+            <TechnologiesCard titleCard="Atro JS" iconCard="web" />
+            <TechnologiesCard titleCard="Tallwin" iconCard="web" />
+            <TechnologiesCard titleCard="Git" iconCard="web" />
+          </div>
+        </div>
+      </div> 
+    </div>
 </section>

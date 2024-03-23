@@ -2,13 +2,14 @@
 //Library imports
 import { Icon } from "astro-icon/components";
 
+
 ---
 
 <header class="header">
   <a href="/" class="logo" aria-label="Go home">
     <b>mont<span>Express</span></b>
   </a>
-  <Icon name="menu" class="menu-icon" />
+  <div class="bx bx-menu" id="menu-icon"></div>
   <nav class="navbar">
     <a href="#home" class="active" >Home</a>
     <a href="#about">About</a>
@@ -16,5 +17,7 @@ import { Icon } from "astro-icon/components";
     <a href="#technologies">Technologies</a>
     <a href="#contact">Contact</a>
     <a href="/blog/">Blog</a>
+
+    <span class="active-nav"></span>
   </nav>
 </header>

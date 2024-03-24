@@ -1,30 +1,39 @@
 ---
 import TechnologiesCard from "./TechnologiesCard.astro";
-
-
 ---
-<section class="technologies" id="technologies">
-    <h2 class="heading">Development <span>Technologies</span></h2>
-    <div class="technologies-row">
-      <div class="technologies-colum">
-        <h3 class="title">Tecnologias de AI</h3>
-        <div class="technologies-box">
-          <div class="technologies-content">
-            <TechnologiesCard titleCard="Copilot" iconCard="web" />
-            <TechnologiesCard titleCard="Codium" iconCard="web" />
-            <TechnologiesCard titleCard="Chat GPT" iconCard="web" />
-          </div>
+
+<section class="technologies show-animate" id="technologies">
+  <h2 class="heading">
+    Development <span>Technologies</span><span
+      class="animate scroll"
+      style="--i:1;"></span>
+  </h2>
+  <div class="technologies-row">
+    <div class="technologies-colum">
+      <h3 class="title">
+        Tecnologias de AI<span class="animate scroll" style="--i:2;"></span>
+      </h3>
+      <div class="technologies-box">
+        <div class="technologies-content">
+          <TechnologiesCard titleCard="Copilot" iconCard="web" />
+          <TechnologiesCard titleCard="Codium" iconCard="web" />
+          <TechnologiesCard titleCard="Chat GPT" iconCard="web" />
         </div>
+        <span class="animate scroll" style="--i:4;"></span>
       </div>
-      <div class="technologies-colum">
-        <h3 class="title">Tecnologias Web</h3>
-        <div class="technologies-box">
-          <div class="technologies-content">
-            <TechnologiesCard titleCard="Atro JS" iconCard="web" />
-            <TechnologiesCard titleCard="Tallwin" iconCard="web" />
-            <TechnologiesCard titleCard="Git" iconCard="web" />
-          </div>
-        </div>
-      </div> 
     </div>
+    <div class="technologies-colum">
+      <h3 class="title">
+        Tecnologias Web<span class="animate scroll" style="--i:3;"></span>
+      </h3>
+      <div class="technologies-box">
+        <div class="technologies-content">
+          <TechnologiesCard titleCard="Atro JS" iconCard="web" />
+          <TechnologiesCard titleCard="Tallwin" iconCard="web" />
+          <TechnologiesCard titleCard="Git" iconCard="web" />
+        </div>
+        <span class="animate scroll" style="--i:5;"></span>
+      </div>
+    </div>
+  </div>
 </section>

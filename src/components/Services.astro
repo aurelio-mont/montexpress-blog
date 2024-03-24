@@ -3,25 +3,25 @@ import ServicesCard from './ServicesCard.astro';
 
 ---
 
-<section class="services" id="services">
-  <h2 class="heading">mont<span>Express</span></h2>
+<section class="services show-animate" id="services">
+  <h2 class="heading">mont<span>Express</span><span class="animate scroll" style="--i:1;" ></span></h2>
   <div class="services-row">
     <div class="services-column">
-      <h3 class="title">Servicios</h3>
+      <h3 class="title">Servicios<span class="animate scroll" style="--i:2;" ></span></h3>
       <div class="services-box">
-        <ServicesCard titleCard='Diseño web personalizado'/>
-        <ServicesCard titleCard='Desarrollo de aplicaciones web'/>
-        <ServicesCard titleCard='Optimización para motores de búsqueda (SEO)'/>
-        <ServicesCard titleCard='Marketing digital y estrategia de marca'/>
+        <ServicesCard titleCard='Diseño web personalizado' style='--i:3;' />
+        <ServicesCard titleCard='Desarrollo de aplicaciones web' style='--i:4;' />
+        <ServicesCard titleCard='Optimización para motores de búsqueda (SEO)' style='--i:5;'/>
+        <ServicesCard titleCard='Marketing digital y estrategia de marca' style='--i:6;'/>
       </div>
     </div>
     <div class="services-column">
-      <h3 class="title">Proyectos</h3>
+      <h3 class="title">Proyectos<span class="animate scroll" style="--i:3;" ></span></h3>
       <div class="services-box">
-        <ServicesCard titleCard='Diseño web personalizado'/>
-        <ServicesCard titleCard='Desarrollo de aplicaciones web'/>
-        <ServicesCard titleCard='Optimización para motores de búsqueda (SEO)'/>
-        <ServicesCard titleCard='Marketing digital y estrategia de marca'/>
+        <ServicesCard titleCard='Diseño web personalizado' style='--i:4;'/>
+        <ServicesCard titleCard='Desarrollo de aplicaciones web' style='--i:5;'/>
+        <ServicesCard titleCard='Optimización para motores de búsqueda (SEO)' style='--i:6;'/>
+        <ServicesCard titleCard='Marketing digital y estrategia de marca' style='--i:7;'/>
       </div>
     </div>
   </div>

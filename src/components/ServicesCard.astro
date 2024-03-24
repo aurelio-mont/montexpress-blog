@@ -4,12 +4,14 @@ interface Props {
   iconCard?: string;
   titleCard?: string;
   descriptionCard?: string;
+  style?: string,
 }
 
 const {
   iconCard = "web",
   titleCard = "Titulo de la card",
   descriptionCard = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dolorem neque explicabo fugiat consequuntur praesentium libero voluptatem quisquam in aut.",
+  style = "--i:1;",
 } = Astro.props as Props;
 ---
 
@@ -19,4 +21,5 @@ const {
     <h3>{titleCard}</h3>
     <p>{descriptionCard}</p>
   </div>
+  <span class="animate scroll" style={style} ></span>
 </div>

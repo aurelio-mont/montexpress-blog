@@ -7,9 +7,9 @@ import { Icon } from "astro-icon/components";
 
 <header class="header">
   <a href="/" class="logo" aria-label="Go home">
-    <b>mont<span>Express</span></b>
+    <b>mont<span>Express</span></b><span class="animate" style="--i:1;" ></span>
   </a>
-  <div class="bx bx-menu" id="menu-icon"></div>
+  <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;" ></span></div>
   <nav class="navbar">
     <a href="#home" class="active" >Home</a>
     <a href="#about">About</a>
@@ -19,5 +19,6 @@ import { Icon } from "astro-icon/components";
     <a href="/blog/">Blog</a>
 
     <span class="active-nav"></span>
+    <span class="animate" style="--i:2;" ></span>
   </nav>
 </header>

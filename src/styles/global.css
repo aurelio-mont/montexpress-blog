@@ -888,12 +888,12 @@ span {
 .navbar .animate,
 #menu-icon .animate,
 .home.show-animate .animate {
-  animation: showRight 1s ease forwards;
+  animation: showRight  1s ease forwards;
   animation-delay: calc(.3s * var(--i));
 }
 
 .animate.scroll {
-  transition: 1s ease;
+  transition: 0.1s ease;
   transition-delay: calc(.3s / var(--i));
   animation: none;
 }

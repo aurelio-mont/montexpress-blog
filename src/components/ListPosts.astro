@@ -1,9 +1,9 @@
 ---
-import PostCard from '../components/PostCard.astro';
 
 import { formatBlogPosts } from '../js/utils';
+import PostCard from './PostCard.astro';
 
-const allPosts = await Astro.glob("../pages/blog/*.md");
+const allPosts = await Astro.glob("../pages/blog/content/*.md");
 const formatedPosts = formatBlogPosts(allPosts);
 ---
 

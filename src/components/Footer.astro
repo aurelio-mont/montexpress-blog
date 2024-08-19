@@ -16,3 +16,8 @@ import { Icon } from 'astro-icon/components';
 
 </footer>
 
+<script>
+    const year: number = new Date().getFullYear();
+    const span = document.querySelector('#copyright') as HTMLElement;
+    span.innerText = `${year}`;
+</script>
